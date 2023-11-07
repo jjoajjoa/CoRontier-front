@@ -6,6 +6,7 @@ import ContestMain from './contest/ContestMain'
 import CommunityMain from './community/CommunityMain'
 import ProjectMain from './project/ProjectMain'
 import UserMain from './users/UserMain'
+import ProjectRead from './project/ProjectRead'
 
 const RouterPage = () => {
     return (
@@ -14,7 +15,10 @@ const RouterPage = () => {
             <Route path="/problem/testpage" element={<TestPage />} />
             <Route path="/contest/contestmain" element={<ContestMain />} />
             <Route path="/community/communitymain" element={<CommunityMain />} />
+
             <Route path="/project/projectmain" element={<ProjectMain />} />
+            <Route path="/project/read/:post_id" element={<ProjectRead />} />
+
             <Route path="/users/usermain" element={<UserMain />} />
         </Routes>
     )
